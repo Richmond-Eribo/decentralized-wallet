@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
 import Wallets from './wallets/wallets.js'
+import Link from 'next/link'
 
 export default function Main() {
   return (
@@ -74,23 +74,27 @@ export default function Main() {
           </div>
         </div>
 
-        <div className='grid max-w-3xl grid-cols-3 gap-10 mt-2 sm:grid-cols-2 md:grid-cols-4'>
-          {Wallets.map(wallet => (
-            <div class='flex flex-col group' key={wallet.name}>
-              <div class='flex justify-center'>
-                <div class='w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24'>
-                  <img
-                    class='inline-block w-20 rounded-full md:w-32 sm:w-24'
-                    src={wallet.image}
-                    alt='mewwallet'
-                  />
+        <div className='flex justify-center'>
+          <div className='grid max-w-3xl grid-cols-3 gap-10 mt-2 sm:grid-cols-2 md:grid-cols-4'>
+            {Wallets.map(wallet => (
+              <Link href={'/wallets/' + wallet.name}>
+                <div class='flex flex-col group' key={wallet.name}>
+                  <div class='flex justify-center'>
+                    <div class='w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24'>
+                      <img
+                        class='inline-block w-20 rounded-full md:w-32 sm:w-24'
+                        src={wallet.image}
+                        alt='mewwallet'
+                      />
+                    </div>
+                  </div>
+                  <div class='flex justify-center mt-4 font-semibold text-black dark:text-white group-hover:text-blue-700'>
+                    {wallet.name}
+                  </div>
                 </div>
-              </div>
-              <div class='flex justify-center mt-4 font-semibold text-black dark:text-white group-hover:text-blue-700'>
-                {wallet.name}
-              </div>
-            </div>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </main>
