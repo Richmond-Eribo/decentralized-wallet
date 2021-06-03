@@ -29,7 +29,7 @@ export default function Footer() {
             href='https://discord.com/invite/jhxMvxP'
           >
             <img
-              class='w-5 h-5 cursor-pointer object-fit'
+              className='w-5 h-5 cursor-pointer object-fit'
               src='/discord.svg'
               alt='discord icon'
             />
@@ -41,7 +41,7 @@ export default function Footer() {
             href='https://github.com/walletconnect'
           >
             <img
-              class='w-5 h-5 cursor-pointer object-fit'
+              className='w-5 h-5 cursor-pointer object-fit'
               src='/github.svg'
               alt='github icon'
             />
@@ -53,7 +53,7 @@ export default function Footer() {
             href='https://t.me/walletconnect_announcements'
           >
             <img
-              class='w-5 h-5 cursor-pointer object-fit'
+              className='w-5 h-5 cursor-pointer object-fit'
               src='/telegram.svg'
               alt='telegram icon'
             />
@@ -65,7 +65,7 @@ export default function Footer() {
             href='https://twitter.walletconnect.org/'
           >
             <img
-              class='w-5 h-5 cursor-pointer object-fit'
+              className='w-5 h-5 cursor-pointer object-fit'
               src='/twitter.svg'
               alt='twitter icon'
             />
