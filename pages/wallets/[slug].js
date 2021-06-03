@@ -174,7 +174,6 @@ export default function Wallet() {
               </div>
             </div>
           </main>
-          <Footer />
         </div>
 
         <style jsx>
@@ -258,6 +257,7 @@ export default function Wallet() {
           `}
         </style>
       </div>
+      <Footer />
     </div>
   )
 }
