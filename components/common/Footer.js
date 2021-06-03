@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className='dark:bg-black'>
       <div className='flex flex-col items-center mt-16'>
         <div className='flex items-center mb-2 space-x-2 text-sm font-semibold text-black dark:text-white'>
           <div>
